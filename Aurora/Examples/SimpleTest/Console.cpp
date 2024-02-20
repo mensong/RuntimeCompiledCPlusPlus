@@ -154,9 +154,9 @@ void Console::OnCompileDone(bool bSuccess)
 	{
 		m_bWaitingForCompile = false;
 
-		// Remove temp context file from game runtime file list so it isn't included in full recompiles
-		// This must be done every time ConsoleContext.cpp gets recompiled because it will get registered again
-		m_pEnv->sys->pRuntimeObjectSystem->RemoveFromRuntimeFileList(m_contextFile.c_str());
+		//// Remove temp context file from game runtime file list so it isn't included in full recompiles
+		//// This must be done every time ConsoleContext.cpp gets recompiled because it will get registered again
+		//m_pEnv->sys->pRuntimeObjectSystem->RemoveFromRuntimeFileList(m_contextFile.c_str());
 
 		if (bSuccess)
 		{
